@@ -1,7 +1,33 @@
+# --- System Files ---
+Thumbs.db
+desktop.
+info.txt
+
+
+# --- Environment Variables (THE MOST IMPORTANT) ---
+.env
+*.env
+env/
+venv/
+ENV/
 mathsisitDj
 venv
-__pycache__/
+mathsisitDj/
+venv/
+
+# --- Django Specifics ---
+db.sqlite3          # Local database (don't upload local data)
+/static/            # Don't upload collected static files
+/media/             # Don't upload user-uploaded files (profiles, etc.)
+__pycache__/        # Compiled Python files
+*.py[cod]         # Compiled Python files
 *.pyc
-.DS_Store
-.env
-info.txt
+
+# --- OS & IDE Specifics ---
+.DS_Store           # macOS junk
+.vscode/            # Local editor settings
+.idea/              # PyCharm settings
+
+# --- API & Cloud Keys ---
+*.pem               # Security certificates/Private keys
+capitals.json       # If you store sensitive credentials in JSON
